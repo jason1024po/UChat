@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UBMessageCallViewController">
+            <connections>
+                <outlet property="cancelButton" destination="vQg-YB-z04" id="3nO-sw-vS8"/>
+                <outlet property="hangupView" destination="YSt-CU-Zoq" id="shX-3B-R3o"/>
+                <outlet property="iconImageView" destination="IaP-58-kEC" id="zHP-YU-2c7"/>
+                <outlet property="responseView" destination="NRF-Dg-yiH" id="d39-Qk-4ss"/>
+                <outlet property="timeLabel" destination="pCT-Sj-fzi" id="Ry5-ki-R79"/>
+                <outlet property="usernameLabel" destination="FET-ud-GRz" id="M5g-W2-f8Y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="netcall_bkg" translatesAutoresizingMaskIntoConstraints="NO" id="oPO-zI-Bdr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCT-Sj-fzi">
+                    <rect key="frame" x="0.0" y="50" width="320" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="IaP-58-kEC">
+                    <rect key="frame" x="120" y="99" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="2n7-Dy-LlG"/>
+                        <constraint firstAttribute="height" constant="80" id="ZF2-QU-hlC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大神留条命" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FET-ud-GRz">
+                    <rect key="frame" x="0.0" y="193" width="320" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSt-CU-Zoq">
+                    <rect key="frame" x="25" y="336" width="270" height="200"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQg-YB-z04">
+                            <rect key="frame" x="20" y="135" width="230" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Tou-RM-req"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="挂 断" backgroundImage="btn_bg_video_normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="btn_bg_video_normal"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelButtonDid:" destination="-1" eventType="touchUpInside" id="FFs-5I-k8Y"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkB-P2-XEg">
+                            <rect key="frame" x="170" y="20" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="6G8-iX-7JE"/>
+                                <constraint firstAttribute="width" constant="75" id="o0V-Pv-qes"/>
+                            </constraints>
+                            <state key="normal" image="btn_speaker_disable"/>
+                            <state key="selected" image="btn_speaker_pressed"/>
+                            <state key="highlighted" image="btn_speaker_highlight"/>
+                            <connections>
+                                <action selector="speakerOutBtnDid:" destination="-1" eventType="touchUpInside" id="2R6-gL-T2M"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fab-lX-mOz">
+                            <rect key="frame" x="25" y="20" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="DDx-ky-u9c"/>
+                                <constraint firstAttribute="width" constant="75" id="Oan-Op-xJN"/>
+                            </constraints>
+                            <state key="normal" image="btn_mute_disable"/>
+                            <state key="selected" image="btn_mute_pressed"/>
+                            <state key="highlighted" image="btn_mute_highlight"/>
+                            <connections>
+                                <action selector="silenceBtnDid:" destination="-1" eventType="touchUpInside" id="OtY-tb-q7a"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="vQg-YB-z04" secondAttribute="bottom" constant="20" id="B2Y-HS-Uql"/>
+                        <constraint firstAttribute="trailing" secondItem="JkB-P2-XEg" secondAttribute="trailing" constant="25" id="OYL-xq-YRZ"/>
+                        <constraint firstItem="Fab-lX-mOz" firstAttribute="leading" secondItem="YSt-CU-Zoq" secondAttribute="leading" constant="25" id="OwD-9g-BSg"/>
+                        <constraint firstItem="vQg-YB-z04" firstAttribute="top" secondItem="Fab-lX-mOz" secondAttribute="bottom" constant="40" id="P7M-hr-2Ua"/>
+                        <constraint firstAttribute="trailing" secondItem="vQg-YB-z04" secondAttribute="trailing" constant="20" id="SlY-7k-IRw"/>
+                        <constraint firstAttribute="height" constant="200" id="UXh-W8-u70"/>
+                        <constraint firstItem="vQg-YB-z04" firstAttribute="top" secondItem="JkB-P2-XEg" secondAttribute="bottom" constant="40" id="aUT-dM-gDt"/>
+                        <constraint firstItem="vQg-YB-z04" firstAttribute="leading" secondItem="YSt-CU-Zoq" secondAttribute="leading" constant="20" id="rJr-TW-Yog"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRF-Dg-yiH">
+                    <rect key="frame" x="25" y="310" width="270" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxE-kl-Lom">
+                            <rect key="frame" x="155" y="10" width="95" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="95" id="W3s-rx-S5g"/>
+                            </constraints>
+                            <state key="normal" title="接 听" backgroundImage="common_green_bg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="answerBtnDid:" destination="-1" eventType="touchUpInside" id="wO4-uq-ful"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hzb-fg-Gni">
+                            <rect key="frame" x="20" y="10" width="95" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="95" id="2Iu-RU-rD2"/>
+                            </constraints>
+                            <state key="normal" title="拒 绝" backgroundImage="common_red_bg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="rejectBtnDid:" destination="-1" eventType="touchUpInside" id="KBs-5E-8kB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="91i-sr-D8K"/>
+                        <constraint firstItem="Hzb-fg-Gni" firstAttribute="top" secondItem="NRF-Dg-yiH" secondAttribute="top" constant="10" id="AXj-bw-ZLs"/>
+                        <constraint firstItem="Hzb-fg-Gni" firstAttribute="leading" secondItem="NRF-Dg-yiH" secondAttribute="leading" constant="20" id="Hc8-Oc-VFe"/>
+                        <constraint firstAttribute="bottom" secondItem="Hzb-fg-Gni" secondAttribute="bottom" constant="10" id="KfZ-Xo-Qrl"/>
+                        <constraint firstAttribute="trailing" secondItem="NxE-kl-Lom" secondAttribute="trailing" constant="20" id="Nq6-TK-Qad"/>
+                        <constraint firstAttribute="bottom" secondItem="NxE-kl-Lom" secondAttribute="bottom" constant="10" id="vtp-gP-O9S"/>
+                        <constraint firstItem="NxE-kl-Lom" firstAttribute="top" secondItem="NRF-Dg-yiH" secondAttribute="top" constant="10" id="wDG-Aj-0pu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="oPO-zI-Bdr" secondAttribute="bottom" id="10g-ui-CQj"/>
+                <constraint firstItem="oPO-zI-Bdr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1xU-br-NKq"/>
+                <constraint firstAttribute="trailing" secondItem="oPO-zI-Bdr" secondAttribute="trailing" id="4CH-nz-9YJ"/>
+                <constraint firstAttribute="trailing" secondItem="FET-ud-GRz" secondAttribute="trailing" id="4sj-Xi-ZFL"/>
+                <constraint firstAttribute="trailing" secondItem="pCT-Sj-fzi" secondAttribute="trailing" id="5tJ-mP-hkU"/>
+                <constraint firstItem="FET-ud-GRz" firstAttribute="top" secondItem="IaP-58-kEC" secondAttribute="bottom" constant="14" id="6yM-Ja-G8a"/>
+                <constraint firstAttribute="bottom" secondItem="YSt-CU-Zoq" secondAttribute="bottom" constant="32" id="8Q9-ZG-737"/>
+                <constraint firstItem="IaP-58-kEC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="91G-WT-ctp"/>
+                <constraint firstItem="NRF-Dg-yiH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="Gxu-UC-IS0"/>
+                <constraint firstItem="YSt-CU-Zoq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="NQT-pf-WEm"/>
+                <constraint firstItem="NRF-Dg-yiH" firstAttribute="top" secondItem="FET-ud-GRz" secondAttribute="bottom" constant="100" id="NcF-4i-gUd"/>
+                <constraint firstItem="pCT-Sj-fzi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="O28-dg-tMd"/>
+                <constraint firstItem="IaP-58-kEC" firstAttribute="top" secondItem="pCT-Sj-fzi" secondAttribute="bottom" constant="25" id="fcp-JH-gGo"/>
+                <constraint firstItem="oPO-zI-Bdr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l2i-k2-Rbj"/>
+                <constraint firstAttribute="trailing" secondItem="YSt-CU-Zoq" secondAttribute="trailing" constant="25" id="npS-dP-nIM"/>
+                <constraint firstItem="pCT-Sj-fzi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="stf-Tv-Tkf"/>
+                <constraint firstItem="FET-ud-GRz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uOU-Bx-wNj"/>
+                <constraint firstAttribute="trailing" secondItem="NRF-Dg-yiH" secondAttribute="trailing" constant="25" id="wOs-D9-4j5"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DefaultAvatar" width="108" height="108"/>
+        <image name="btn_bg_video_normal" width="10" height="10"/>
+        <image name="btn_mute_disable" width="75" height="75"/>
+        <image name="btn_mute_highlight" width="75" height="75"/>
+        <image name="btn_mute_pressed" width="75" height="75"/>
+        <image name="btn_speaker_disable" width="75" height="75"/>
+        <image name="btn_speaker_highlight" width="75" height="75"/>
+        <image name="btn_speaker_pressed" width="75" height="75"/>
+        <image name="common_green_bg" width="1" height="1"/>
+        <image name="common_red_bg" width="1" height="1"/>
+        <image name="netcall_bkg" width="320" height="568"/>
+    </resources>
+</document>
