@@ -45,7 +45,7 @@
 */
 
 - (IBAction)signUpBtn:(UIButton *)sender {
-    
+    [self.view endEditing:YES];
     //异步注册账号
     [[EaseMob sharedInstance].chatManager asyncRegisterNewAccount:self.userNameTextField.text
                                                          password:self.passwordTextField.text
@@ -89,7 +89,7 @@
 
 //点击登陆后的操作
 - (void)loginWithUsername:(NSString *)username password:(NSString *)password {
-    
+    [self.view endEditing:YES];
     MBProgressHUD *hud = [self.view showLoading:@"登录中..."];
     
     //异步登陆账号
