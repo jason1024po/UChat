@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		307C6BF8D1D7F9BAC5FC4B26 /* libPods-UChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4E7B3C4070D3094EFAC8BC /* libPods-UChat.a */; };
 		590CFDEC1C4620AA00AC6BEF /* UBInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 590CFDE71C4620AA00AC6BEF /* UBInputTextView.m */; };
 		590CFDED1C4620AA00AC6BEF /* UBInputToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 590CFDE91C4620AA00AC6BEF /* UBInputToolBar.m */; };
 		590CFDEE1C4620AA00AC6BEF /* UBInputToolBarVoiceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 590CFDEB1C4620AA00AC6BEF /* UBInputToolBarVoiceButton.m */; };
@@ -317,6 +318,9 @@
 		71E354461C5869E200E7868C /* UBMessageCallVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UBMessageCallVideoViewController.xib; sourceTree = "<group>"; };
 		71E3544A1C5B0E2F00E7868C /* UBInvitationManagerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBInvitationManagerTool.h; sourceTree = "<group>"; };
 		71E3544B1C5B0E2F00E7868C /* UBInvitationManagerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBInvitationManagerTool.m; sourceTree = "<group>"; };
+		7B4E7B3C4070D3094EFAC8BC /* libPods-UChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAB5056944608BD9148C03E /* Pods-UChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UChat/Pods-UChat.debug.xcconfig"; sourceTree = "<group>"; };
+		FF7F591ABBD89827E5594195 /* Pods-UChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-UChat/Pods-UChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +332,7 @@
 				DFE291BE8623C32AB741CC01 /* libPods.a in Frameworks */,
 				592AD7A11C3CFF2200B907D5 /* libopencore-amrwb.a in Frameworks */,
 				592AD7A01C3CFF2200B907D5 /* libopencore-amrnb.a in Frameworks */,
+				307C6BF8D1D7F9BAC5FC4B26 /* libPods-UChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -934,6 +939,7 @@
 			children = (
 				592AD7A91C3E35A400B907D5 /* MapKit.framework */,
 				4C0E6A33CEFBBDC4E53731B3 /* libPods.a */,
+				7B4E7B3C4070D3094EFAC8BC /* libPods-UChat.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -943,6 +949,8 @@
 			children = (
 				630EF48AC9C929BEED54D822 /* Pods.debug.xcconfig */,
 				4ADFF160BBC80F00CEB3847E /* Pods.release.xcconfig */,
+				BEAB5056944608BD9148C03E /* Pods-UChat.debug.xcconfig */,
+				FF7F591ABBD89827E5594195 /* Pods-UChat.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -954,12 +962,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 596AABB31C32317100AA1842 /* Build configuration list for PBXNativeTarget "UChat" */;
 			buildPhases = (
-				8CF087E699862B24246D28DE /* Check Pods Manifest.lock */,
+				8CF087E699862B24246D28DE /* [CP] Check Pods Manifest.lock */,
 				596AAB821C32317000AA1842 /* Sources */,
 				596AAB831C32317000AA1842 /* Frameworks */,
 				596AAB841C32317000AA1842 /* Resources */,
-				3FF93ECE14FFFD0B26ABDA35 /* Embed Pods Frameworks */,
-				C141832D0F7854274855B80F /* Copy Pods Resources */,
+				3FF93ECE14FFFD0B26ABDA35 /* [CP] Embed Pods Frameworks */,
+				C141832D0F7854274855B80F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1095,29 +1103,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3FF93ECE14FFFD0B26ABDA35 /* Embed Pods Frameworks */ = {
+		3FF93ECE14FFFD0B26ABDA35 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UChat/Pods-UChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8CF087E699862B24246D28DE /* Check Pods Manifest.lock */ = {
+		8CF087E699862B24246D28DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1125,19 +1133,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C141832D0F7854274855B80F /* Copy Pods Resources */ = {
+		C141832D0F7854274855B80F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UChat/Pods-UChat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1362,7 +1370,7 @@
 		};
 		596AABB41C32317100AA1842 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 630EF48AC9C929BEED54D822 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = BEAB5056944608BD9148C03E /* Pods-UChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -1385,7 +1393,7 @@
 		};
 		596AABB51C32317100AA1842 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ADFF160BBC80F00CEB3847E /* Pods.release.xcconfig */;
+			baseConfigurationReference = FF7F591ABBD89827E5594195 /* Pods-UChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
