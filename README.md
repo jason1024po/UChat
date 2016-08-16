@@ -16,5 +16,5 @@ uchat
 ![8.PNG](http://upload-images.jianshu.io/upload_images/743632-2c42b7ad7c7f0ee1.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 说明
-代码很乱也没有规划跟重构，拿出来给大家一个参考学习交流。图标也是从网上摘的，如果有侵权请联系xusj10@163.com
+代码很乱也没有规划跟重构，代码也是有bug的，拿出来给大家一个参考学习交流。图标也是从网上摘的，如果有侵权请联系xusj10@163.com
 
