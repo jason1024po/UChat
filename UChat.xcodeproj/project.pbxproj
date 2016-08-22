@@ -104,7 +104,6 @@
 		71E354471C5869E200E7868C /* UBMessageCallVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E354451C5869E200E7868C /* UBMessageCallVideoViewController.m */; };
 		71E354481C5869E200E7868C /* UBMessageCallVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E354461C5869E200E7868C /* UBMessageCallVideoViewController.xib */; };
 		71E3544C1C5B0E2F00E7868C /* UBInvitationManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E3544B1C5B0E2F00E7868C /* UBInvitationManagerTool.m */; };
-		DFE291BE8623C32AB741CC01 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0E6A33CEFBBDC4E53731B3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -329,7 +328,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				592AD7AA1C3E35A400B907D5 /* MapKit.framework in Frameworks */,
-				DFE291BE8623C32AB741CC01 /* libPods.a in Frameworks */,
 				592AD7A11C3CFF2200B907D5 /* libopencore-amrwb.a in Frameworks */,
 				592AD7A01C3CFF2200B907D5 /* libopencore-amrnb.a in Frameworks */,
 				307C6BF8D1D7F9BAC5FC4B26 /* libPods-UChat.a in Frameworks */,
@@ -1028,6 +1026,7 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8S89R37564;
 						DevelopmentTeamName = "盛江 徐 (Personal Team)";
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1322,7 +1321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1361,7 +1360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
@@ -1378,9 +1377,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8S89R37564;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = UChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1401,9 +1401,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8S89R37564;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = UChat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
