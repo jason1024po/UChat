@@ -3,7 +3,10 @@ uchat
 ### 1.项目介绍 <br/>
 基于环信的聊天框架 <br/>
 ### 2.安装使用 <br/>
-`pod install` <br/>
+下载后进入项目目录，使用cocoapods安装，cocoapods安装方法大家自行学习安装。<br/>
+执行命令 `pod install` <br/>
+安装成功后会多出`Podfile.lock` `Pods` `UChat.xcworkspace`三个文件及目录。<br/>
+运行新的工程文件`UChat.xcworkspace`而不是原来的。<br/>
 ### 3.屏幕截图 <br/>
 
 ![](./screen/1.png)
