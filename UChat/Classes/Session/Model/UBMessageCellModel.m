@@ -201,7 +201,7 @@
     NSMutableArray *regexResults = [NSMutableArray array];
     
     // 匹配表情
-    NSString *emotionRegex = @"\\[[a-zA-Z0-9\\u4e00-\\u9fa5]+\\]";
+    NSString *emotionRegex = @"\\[[a-zA-Z0-9\\u4e00-\\u9fa5\\_\\-]+\\]";
 //    [text enumerateStringsMatchedByRegex:emotionRegex usingBlock:^(NSInteger captureCount, NSString *const __unsafe_unretained *capturedStrings, const NSRange *capturedRanges, volatile BOOL *const stop) {
 //        HMRegexResult *rr = [[HMRegexResult alloc] init];
 //        rr.string = *capturedStrings;
